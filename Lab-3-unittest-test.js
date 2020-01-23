@@ -25,3 +25,12 @@ function test__checkHumberId(valueIn, expected) {
 
 ///(n|N)\d{8}/
 
+test__checkHumberId("n12345678", true); //test to pass
+test__checkHumberId("n0123", false); //test to fail
+test__checkHumberId("x", false); //test to fail with known failing value
+test__checkHumberId(undefined, false); //''
+test__checkHumberId("N1234567", false); //boundry test
+test__checkHumberId("N12345678", true); //boundry test
+test__checkHumberId("N123456789", false); //boundry test
+test__checkHumberId("N12345678", true);
+
