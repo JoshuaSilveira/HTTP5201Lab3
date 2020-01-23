@@ -12,10 +12,11 @@ alert("lab 3 Function");//please delete this line once connected.
      let validID = false;
      if(idIn===undefined){
          return false;
-     }else if(!idIn.match('/(n|N)\d{8}')){
+     }else if(!idIn.match(/(n|N)\d{8}/){
         return false;
      }
      
      return true;
  }
 
+console.log(checkHumbrId("n12345678"))
