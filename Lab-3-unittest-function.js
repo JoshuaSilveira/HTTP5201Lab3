@@ -19,4 +19,3 @@ alert("lab 3 Function");//please delete this line once connected.
      return true;
  }
 
-console.log(checkHumbrId("n12345678"))
